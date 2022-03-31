@@ -1,4 +1,4 @@
-package edu.sprint_3;
+package edu.sprint3;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;

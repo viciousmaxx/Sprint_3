@@ -1,12 +1,10 @@
-package edu.sprint3;
+package edu.sprint3.couriers;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 import static org.junit.Assert.*;
 
@@ -22,98 +20,94 @@ public class LoginCourierTest {
 
     @After
     public void tearDown() {
-        try {
-            if ((int) (courierId.extract().path("id")) > 0) {
-                courierClient.delete(courierId.extract().path("id").toString());
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (courierId != null) {
+            boolean x = courierClient.delete(courierId.extract().path("id"));
         }
     }
 
-    //курьер может авторизоваться;
     @Test
-    @DisplayName("Check user name and print response body")
-    @Description("This is a more complicated test with console output")
+    @DisplayName("Курьер может авторизоваться")
+    @Description("При авторизации возвращается статускод '200' и ответ с id:")
     public void CourierCanLoginTest() {
         Courier courier = Courier.getRandomCourier();
-        ValidatableResponse isCreated = courierClient.create(courier);
+        courierClient.createCourier(courier);
         courierId = courierClient.login(new CourierCredentials(courier.getLogin(), courier.getPassword()));
 
-        assertNotNull(courierId.extract().path("id"));
-        assertEquals(200, courierId.extract().statusCode());
+        int actualStatusCode = courierId.extract().statusCode();
+        String actualAnswer = courierId.extract().path("id").toString();
+
+        assertNotNull(actualAnswer);
+        assertEquals(200, actualStatusCode);
     }
 
-    //для авторизации нужно передать все обязательные поля;
     @Test
-    @DisplayName("Check user name and print response body")
-    @Description("This is a more complicated test with console output")
+    @DisplayName("Для авторизации нужно передать все обязательные поля")
+    @Description("При авторизации с пустым значением пароля возвращается статускод '400' и ответ с \"message\":  \"Недостаточно данных для входа\"")
     public void forAuthorisationAllNeededAllRequiredFieldsTest() {
         Courier courier = Courier.getRandomCourier();
-        ValidatableResponse isCreated = courierClient.create(courier);
+        courierClient.createCourier(courier);
         courierId = courierClient.login(new CourierCredentials(courier.getLogin(), courier.getPassword()));
-
         courier.setPassword("");
         ValidatableResponse wrongCourierId = courierClient.login(new CourierCredentials(courier.getLogin(), courier.getPassword()));
 
-        assertEquals(400, wrongCourierId.extract().statusCode());
-        assertEquals("Недостаточно данных для входа", wrongCourierId.extract().path("message"));
+        int actualStatusCode = wrongCourierId.extract().statusCode();
+        String actualAnswer = wrongCourierId.extract().path("message").toString();
+
+        assertEquals(400, actualStatusCode);
+        assertEquals("Недостаточно данных для входа", actualAnswer);
     }
 
-    //система вернёт ошибку, если неправильно указать логин или пароль;
     @Test
-    @DisplayName("Check user name and print response body")
-    @Description("This is a more complicated test with console output")
+    @DisplayName("Система вернёт ошибку, если неправильно указать логин или пароль")
+    @Description("Авторизация с некорректным паролем возвращается статускод '404' и ответ \"message\": \"Учетная запись не найдена\"")
     public void wrongCredentialsReturnErrorTest() {
         Courier courier = Courier.getRandomCourier();
-
-        ValidatableResponse isCreated = courierClient.create(courier);
+        courierClient.createCourier(courier);
         courierId = courierClient.login(new CourierCredentials(courier.getLogin(), courier.getPassword()));
-
-        String wrongPassword = RandomStringUtils.randomAlphabetic(10);
-        courier.setPassword(wrongPassword);
+        courier.setPassword(RandomStringUtils.randomAlphabetic(10));
         ValidatableResponse wrongCourierId = courierClient.login(new CourierCredentials(courier.getLogin(), courier.getPassword()));
+        String actualAnswer = wrongCourierId.extract().path("message").toString();
+        int actualStatusCode = wrongCourierId.extract().statusCode();
 
-        assertNotNull("Учетная запись не найдена", wrongCourierId.extract().path("message"));
-        assertEquals(404, wrongCourierId.extract().statusCode());
+        assertEquals("Учетная запись не найдена", actualAnswer);
+        assertEquals(404, actualStatusCode);
     }
 
-    //если какого-то поля нет, запрос возвращает ошибку;
     @Test
-    @DisplayName("Check user name and print response body")
-    @Description("This is a more complicated test with console output")
+    @DisplayName("Если какого-то поля нет, запрос возвращает ошибку")
+    @Description("Авторизация с пустым паролем возвращается статускод '400'")
     public void forAuthorisationAllDataNeededTest() {
-        Courier courier = Courier.getRandomCourier();
-        ValidatableResponse isCreated = courierClient.create(courier);
-        courierId = courierClient.login(new CourierCredentials(courier.getLogin()));
 
-        assertEquals(400, courierId.extract().statusCode());
-        assertEquals("Недостаточно данных для входа", courierId.extract().path("message"));
+        Courier courier = new Courier();
+        courier.setLogin("login");
+        ValidatableResponse validatableResponse = courierClient.login(new CourierCredentials(courier.getLogin()));
+        int actualStatusCode = validatableResponse.extract().statusCode();
 
+        assertEquals(400, actualStatusCode);
     }
 
-    //если авторизоваться под несуществующим пользователем, запрос возвращает ошибку;
     @Test
-    @DisplayName("Check user name and print response body")
-    @Description("This is a more complicated test with console output")
+    @DisplayName("Если авторизоваться под несуществующим пользователем, запрос возвращает ошибку;")
+    @Description("Авторизация с некорректной парой логин/пароль возвращает статускод '404' и ответ \"message\": \"Учетная запись не найдена\"")
     public void nonExistedUsersNotAllowedToAuthorisationTest() {
         Courier courier = Courier.getRandomCourier();
-        courierId = courierClient.login(new CourierCredentials(courier.getLogin(), courier.getPassword()));
+        ValidatableResponse fakeCourierId = courierClient.login(new CourierCredentials(courier.getLogin(), courier.getPassword()));
+        int actualStatusCode = fakeCourierId.extract().statusCode();
+        String actualAnswer = fakeCourierId.extract().path("message").toString();
 
-        assertEquals(404, courierId.extract().statusCode());
-        assertEquals("Учетная запись не найдена", courierId.extract().path("message"));
+        assertEquals(404, actualStatusCode);
+        assertEquals("Учетная запись не найдена", actualAnswer);
     }
 
-    //успешный запрос возвращает id.
     @Test
-    @DisplayName("Check user name and print response body")
-    @Description("This is a more complicated test with console output")
+    @DisplayName("Успешный запрос возвращает id")
+    @Description("Успешная авторизация с корректной парой логин/пароль возвращает ответ с id:")
     public void successRequestReturnsIdTest() {
         Courier courier = Courier.getRandomCourier();
-        ValidatableResponse isCreated = courierClient.create(courier);
+        courierClient.createCourier(courier);
         courierId = courierClient.login(new CourierCredentials(courier.getLogin(), courier.getPassword()));
+        boolean actualAnswer = courierId.extract().path("").toString().contains("id");
 
-        assertTrue(courierId.extract().path("").toString().contains("id"));
-        assertEquals(200, courierId.extract().statusCode());
+        assertTrue(actualAnswer);
     }
 }

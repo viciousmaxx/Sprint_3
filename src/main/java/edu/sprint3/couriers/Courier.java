@@ -1,4 +1,4 @@
-package edu.sprint3;
+package edu.sprint3.couriers;
 
 import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
@@ -12,7 +12,7 @@ public class Courier {
     public String firstName;
 
     public Courier() {
-            };
+            }
 
     public Courier(String login, String password, String firstName) {
         this.login = login;
@@ -20,7 +20,7 @@ public class Courier {
         this.firstName = firstName;
     }
 
-    @Step("Creating random courier")
+    @Step("Создаем курьера со случайными данными")
     public static Courier getRandomCourier() {
         final String login = RandomStringUtils.randomAlphabetic(10);
         final String password = RandomStringUtils.randomAlphabetic(10);
@@ -32,6 +32,4 @@ public class Courier {
 
         return new Courier(login, password, firstName);
     }
-
-
 }

@@ -1,15 +1,16 @@
-package orders;
+package edu.sprint3.orders;
 
-import edu.sprint3.orders.*;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
-import io.restassured.response.ValidatableResponse;
-import org.junit.*;
-import static org.junit.Assert.assertEquals;
+import io.restassured.response.Response;
+import org.hamcrest.Matchers;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 public class CreateOrderTest {
         private OrderClient orderClient;
-        private String orderId;
+        private Integer orderId;
 
         @Before
         public void setUp() {
@@ -26,10 +27,11 @@ public class CreateOrderTest {
         @Description("Создаем заказ со случайными значениями без выбора цвета")
         public void orderCreatingIsAvailableTest() {
             Order order = Order.getRandomOrder();
-            ValidatableResponse validatableResponse = orderClient.createOrder(order);
-            orderId = validatableResponse.extract().path("track").toString();
-            int actual = validatableResponse.extract().statusCode();
+            Response Response = orderClient.createOrder(order);
+            orderId = Response.getBody().path("track");
 
-            assertEquals(201, actual);
+            Response.then().assertThat().statusCode(201).and()
+                    .body("", Matchers.hasKey("track"))
+                    .body("track", Matchers.greaterThan(0));
         }
 }

@@ -1,4 +1,4 @@
-package edu.sprint3;
+package edu.sprint3.couriers;
 
 import lombok.Data;
 
