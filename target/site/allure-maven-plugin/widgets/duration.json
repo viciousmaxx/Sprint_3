@@ -1,0 +1,191 @@
+[ {
+  "uid" : "b8b1a13b78dd6133",
+  "name" : "Если создать пользователя с логином, который уже есть, возвращается ошибка",
+  "time" : {
+    "start" : 1648833065436,
+    "stop" : 1648833066088,
+    "duration" : 652
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "5ee80dce9cd4cc9",
+  "name" : "getOrdersTest",
+  "time" : {
+    "start" : 1648833130249,
+    "stop" : 1648833131648,
+    "duration" : 1399
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f987666211045ea",
+  "name" : "Создание заказа",
+  "time" : {
+    "start" : 1648833129699,
+    "stop" : 1648833130247,
+    "duration" : 548
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7f96a21bc185cc8",
+  "name" : "Курьера можно создать",
+  "time" : {
+    "start" : 1648833064199,
+    "stop" : 1648833064721,
+    "duration" : 522
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a5a129eb52fb04d",
+  "name" : "Если какого-то поля нет, запрос возвращает ошибку",
+  "time" : {
+    "start" : 1648833067454,
+    "stop" : 1648833127586,
+    "duration" : 60132
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5c3bb41ed20707e",
+  "name" : "Чтобы создать курьера, нужно передать в ручку все обязательные поля",
+  "time" : {
+    "start" : 1648833066720,
+    "stop" : 1648833066890,
+    "duration" : 170
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cab1c15850a7f5cd",
+  "name" : "createOrderTest[1: color = [BLACK]]",
+  "time" : {
+    "start" : 1648833131846,
+    "stop" : 1648833132020,
+    "duration" : 174
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6cfb2f1514f8203e",
+  "name" : "createOrderTest[3: color = null]",
+  "time" : {
+    "start" : 1648833132225,
+    "stop" : 1648833132405,
+    "duration" : 180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ef6e74f48138685",
+  "name" : "Успешный запрос возвращает id",
+  "time" : {
+    "start" : 1648833066893,
+    "stop" : 1648833067452,
+    "duration" : 559
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ac70ab07754ab3a",
+  "name" : "Успешный запрос возвращает ok: true",
+  "time" : {
+    "start" : 1648833064899,
+    "stop" : 1648833065434,
+    "duration" : 535
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73e0f693c90e7acd",
+  "name" : "Для авторизации нужно передать все обязательные поля",
+  "time" : {
+    "start" : 1648833128146,
+    "stop" : 1648833128786,
+    "duration" : 640
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b1227459012fc426",
+  "name" : "createOrderTest[2: color = [GREY]]",
+  "time" : {
+    "start" : 1648833132022,
+    "stop" : 1648833132224,
+    "duration" : 202
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b4aae58ce9902e24",
+  "name" : "Нельзя создать двух одинаковых курьеров",
+  "time" : {
+    "start" : 1648833066091,
+    "stop" : 1648833066717,
+    "duration" : 626
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "36355c1e983d8253",
+  "name" : "Если одного из полей нет, запрос возвращает ошибку",
+  "time" : {
+    "start" : 1648833064723,
+    "stop" : 1648833064896,
+    "duration" : 173
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54e1cbeb8b7af37b",
+  "name" : "Если авторизоваться под несуществующим пользователем, запрос возвращает ошибку;",
+  "time" : {
+    "start" : 1648833128788,
+    "stop" : 1648833128973,
+    "duration" : 185
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b38408f0ebea93e",
+  "name" : "Система вернёт ошибку, если неправильно указать логин или пароль",
+  "time" : {
+    "start" : 1648833128974,
+    "stop" : 1648833129694,
+    "duration" : 720
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aceaf6ac093fb742",
+  "name" : "Запрос возвращает правильный код ответа",
+  "time" : {
+    "start" : 1648833060475,
+    "stop" : 1648833064142,
+    "duration" : 3667
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d8c59d9631d0342",
+  "name" : "Курьер может авторизоваться",
+  "time" : {
+    "start" : 1648833127588,
+    "stop" : 1648833128145,
+    "duration" : 557
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bcf05ac54fe7a17",
+  "name" : "createOrderTest[0: color = [BLACK, GREY]]",
+  "time" : {
+    "start" : 1648833131668,
+    "stop" : 1648833131844,
+    "duration" : 176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

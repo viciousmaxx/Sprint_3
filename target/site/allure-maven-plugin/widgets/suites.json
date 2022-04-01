@@ -1,0 +1,59 @@
+{
+  "total" : 5,
+  "items" : [ {
+    "uid" : "dbf6f7da8ce75234e43ac282947d9bc4",
+    "name" : "edu.sprint3.couriers.CreateCourierTest",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "85ecf051711a2a1eb615f622f4ca795a",
+    "name" : "edu.sprint3.couriers.LoginCourierTest",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "0e2b385e441ff5a00617ee49ab34997f",
+    "name" : "edu.sprint3.orders.LoginParametrizedTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "423f8dd0a3753cc716ce31edc5b5089a",
+    "name" : "edu.sprint3.orders.CreateOrderTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "a415ff8605b80bbd9e10fb546971e602",
+    "name" : "edu.sprint3.orders.GetOrdersTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

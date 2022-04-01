@@ -1,0 +1,56 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected:<...гин уже используется[]> but was:<...гин уже используется[. Попробуйте другой.]>",
+      "children" : [ {
+        "name" : "Если создать пользователя с логином, который уже есть, возвращается ошибка",
+        "uid" : "b8b1a13b78dd6133",
+        "parentUid" : "26fa1a768f16a42f193de75641e1cb02",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648833065436,
+          "stop" : 1648833066088,
+          "duration" : 652
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Нельзя создать двух одинаковых курьеров",
+        "uid" : "b4aae58ce9902e24",
+        "parentUid" : "26fa1a768f16a42f193de75641e1cb02",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648833066091,
+          "stop" : 1648833066717,
+          "duration" : 626
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "26fa1a768f16a42f193de75641e1cb02"
+    }, {
+      "name" : "expected:<400> but was:<504>",
+      "children" : [ {
+        "name" : "Если какого-то поля нет, запрос возвращает ошибку",
+        "uid" : "5a5a129eb52fb04d",
+        "parentUid" : "8b2d10595e8db2fadb987d2ebc0abfeb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1648833067454,
+          "stop" : 1648833127586,
+          "duration" : 60132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8b2d10595e8db2fadb987d2ebc0abfeb"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

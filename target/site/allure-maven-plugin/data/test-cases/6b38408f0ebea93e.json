@@ -1,0 +1,174 @@
+{
+  "uid" : "6b38408f0ebea93e",
+  "name" : "Система вернёт ошибку, если неправильно указать логин или пароль",
+  "fullName" : "edu.sprint3.couriers.LoginCourierTest.wrongCredentialsReturnErrorTest",
+  "historyId" : "fddecbf6319f52b67166c1d6798bb4e0",
+  "time" : {
+    "start" : 1648833128974,
+    "stop" : 1648833129694,
+    "duration" : 720
+  },
+  "description" : "Авторизация с некорректным паролем возвращается статускод '404' и ответ \"message\": \"Учетная запись не найдена\"",
+  "descriptionHtml" : "<p>Авторизация с некорректным паролем возвращается статускод '404' и ответ &quot;message&quot;: &quot;Учетная запись не найдена&quot;</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Авторизация с некорректным паролем возвращается статускод '404' и ответ \"message\": \"Учетная запись не найдена\"",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создаем курьера со случайными данными",
+      "time" : {
+        "start" : 1648833128974,
+        "stop" : 1648833128975,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5d5be61dfd34eebb",
+        "name" : "Login: ",
+        "source" : "5d5be61dfd34eebb.txt",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "138d1a2e8a3a650b",
+        "name" : "Password: ",
+        "source" : "138d1a2e8a3a650b.txt",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "ecb8576c3aade07f",
+        "name" : "FirstName: ",
+        "source" : "ecb8576c3aade07f.txt",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Регистрация курьера",
+      "time" : {
+        "start" : 1648833128976,
+        "stop" : 1648833129192,
+        "duration" : 216
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courier",
+        "value" : "Courier(login=TvsPgVIEOt, password=nvZbkWAlmi, firstName=vuDOyySfKN)"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Авторизуем курьера TvsPgVIEOt",
+      "time" : {
+        "start" : 1648833129192,
+        "stop" : 1648833129327,
+        "duration" : 135
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "credentials",
+        "value" : "CourierCredentials(login=TvsPgVIEOt, password=nvZbkWAlmi, firstName=null)"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Авторизуем курьера TvsPgVIEOt",
+      "time" : {
+        "start" : 1648833129327,
+        "stop" : 1648833129471,
+        "duration" : 144
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "credentials",
+        "value" : "CourierCredentials(login=TvsPgVIEOt, password=KwlWBPOxyS, firstName=null)"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Удаляем курьера с ID 46044",
+      "time" : {
+        "start" : 1648833129484,
+        "stop" : 1648833129694,
+        "duration" : 210
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "46044"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "edu.sprint3.couriers"
+  }, {
+    "name" : "testClass",
+    "value" : "edu.sprint3.couriers.LoginCourierTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "wrongCredentialsReturnErrorTest"
+  }, {
+    "name" : "suite",
+    "value" : "edu.sprint3.couriers.LoginCourierTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-PNA8O1J9"
+  }, {
+    "name" : "thread",
+    "value" : "26544@LAPTOP-PNA8O1J9.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6b38408f0ebea93e.json",
+  "parameterValues" : [ ]
+}

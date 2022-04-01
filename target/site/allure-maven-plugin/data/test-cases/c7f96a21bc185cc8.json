@@ -1,0 +1,156 @@
+{
+  "uid" : "c7f96a21bc185cc8",
+  "name" : "Курьера можно создать",
+  "fullName" : "edu.sprint3.couriers.CreateCourierTest.courierCreatingIsAvailableTest",
+  "historyId" : "f3c1e363f785f7189e6f0d5ace23ddf",
+  "time" : {
+    "start" : 1648833064199,
+    "stop" : 1648833064721,
+    "duration" : 522
+  },
+  "description" : "При создании курьера возвращается статускод '201', а в теле ответа 'true'",
+  "descriptionHtml" : "<p>При создании курьера возвращается статускод '201', а в теле ответа 'true'</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "При создании курьера возвращается статускод '201', а в теле ответа 'true'",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создаем курьера со случайными данными",
+      "time" : {
+        "start" : 1648833064199,
+        "stop" : 1648833064201,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "929b90d79f5a6b11",
+        "name" : "Login: ",
+        "source" : "929b90d79f5a6b11.txt",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "3722b4f71af12d7f",
+        "name" : "Password: ",
+        "source" : "3722b4f71af12d7f.txt",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "801574f62b74089f",
+        "name" : "FirstName: ",
+        "source" : "801574f62b74089f.txt",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Регистрация курьера",
+      "time" : {
+        "start" : 1648833064201,
+        "stop" : 1648833064389,
+        "duration" : 188
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courier",
+        "value" : "Courier(login=FNLNzSEZfR, password=qHjzFSJzLD, firstName=HmNBQmEydo)"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Авторизуем курьера FNLNzSEZfR",
+      "time" : {
+        "start" : 1648833064389,
+        "stop" : 1648833064542,
+        "duration" : 153
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "credentials",
+        "value" : "CourierCredentials(login=FNLNzSEZfR, password=qHjzFSJzLD, firstName=null)"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Удаляем курьера с ID 46037",
+      "time" : {
+        "start" : 1648833064558,
+        "stop" : 1648833064721,
+        "duration" : 163
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "46037"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "edu.sprint3.couriers"
+  }, {
+    "name" : "testClass",
+    "value" : "edu.sprint3.couriers.CreateCourierTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "courierCreatingIsAvailableTest"
+  }, {
+    "name" : "suite",
+    "value" : "edu.sprint3.couriers.CreateCourierTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-PNA8O1J9"
+  }, {
+    "name" : "thread",
+    "value" : "26544@LAPTOP-PNA8O1J9.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c7f96a21bc185cc8.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,182 @@
+{
+  "uid" : "b4aae58ce9902e24",
+  "name" : "Нельзя создать двух одинаковых курьеров",
+  "fullName" : "edu.sprint3.couriers.CreateCourierTest.creatingTwoCourierWithSameCredentialsTest",
+  "historyId" : "e785901ef2d61ba45d2739c479724433",
+  "time" : {
+    "start" : 1648833066091,
+    "stop" : 1648833066717,
+    "duration" : 626
+  },
+  "description" : "При попытке создания курьера с дублирующими данными возвращается статускод 409, а в теле ответа 'Этот логин уже используется'",
+  "descriptionHtml" : "<p>При попытке создания курьера с дублирующими данными возвращается статускод 409, а в теле ответа 'Этот логин уже используется'</p>\n",
+  "status" : "failed",
+  "statusMessage" : "expected:<...гин уже используется[]> but was:<...гин уже используется[. Попробуйте другой.]>",
+  "statusTrace" : "org.junit.ComparisonFailure: expected:<...гин уже используется[]> but was:<...гин уже используется[. Попробуйте другой.]>\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat edu.sprint3.couriers.CreateCourierTest.creatingTwoCourierWithSameCredentialsTest(CreateCourierTest.java:59)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\r\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\r\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\r\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\r\n\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\r\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\r\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\r\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "При попытке создания курьера с дублирующими данными возвращается статускод 409, а в теле ответа 'Этот логин уже используется'",
+    "status" : "failed",
+    "statusMessage" : "expected:<...гин уже используется[]> but was:<...гин уже используется[. Попробуйте другой.]>",
+    "statusTrace" : "org.junit.ComparisonFailure: expected:<...гин уже используется[]> but was:<...гин уже используется[. Попробуйте другой.]>\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat edu.sprint3.couriers.CreateCourierTest.creatingTwoCourierWithSameCredentialsTest(CreateCourierTest.java:59)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\r\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\r\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\r\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\r\n\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\r\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\r\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\r\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\n",
+    "steps" : [ {
+      "name" : "Создаем курьера со случайными данными",
+      "time" : {
+        "start" : 1648833066091,
+        "stop" : 1648833066094,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1ac318262e04103b",
+        "name" : "Login: ",
+        "source" : "1ac318262e04103b.txt",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "36ca5b8ac80b19e6",
+        "name" : "Password: ",
+        "source" : "36ca5b8ac80b19e6.txt",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "168febab93b63a6f",
+        "name" : "FirstName: ",
+        "source" : "168febab93b63a6f.txt",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Регистрация курьера",
+      "time" : {
+        "start" : 1648833066094,
+        "stop" : 1648833066251,
+        "duration" : 157
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courier",
+        "value" : "Courier(login=DiSTcpJMnQ, password=uNVhZafNpP, firstName=vVpSkCEwkb)"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Авторизуем курьера DiSTcpJMnQ",
+      "time" : {
+        "start" : 1648833066251,
+        "stop" : 1648833066399,
+        "duration" : 148
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "credentials",
+        "value" : "CourierCredentials(login=DiSTcpJMnQ, password=uNVhZafNpP, firstName=null)"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Регистрация курьера",
+      "time" : {
+        "start" : 1648833066399,
+        "stop" : 1648833066527,
+        "duration" : 128
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courier",
+        "value" : "Courier(login=DiSTcpJMnQ, password=uNVhZafNpP, firstName=vVpSkCEwkb)"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Удаляем курьера с ID 46040",
+      "time" : {
+        "start" : 1648833066542,
+        "stop" : 1648833066716,
+        "duration" : 174
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "46040"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 3,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "edu.sprint3.couriers"
+  }, {
+    "name" : "testClass",
+    "value" : "edu.sprint3.couriers.CreateCourierTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "creatingTwoCourierWithSameCredentialsTest"
+  }, {
+    "name" : "suite",
+    "value" : "edu.sprint3.couriers.CreateCourierTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-PNA8O1J9"
+  }, {
+    "name" : "thread",
+    "value" : "26544@LAPTOP-PNA8O1J9.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b4aae58ce9902e24.json",
+  "parameterValues" : [ ]
+}

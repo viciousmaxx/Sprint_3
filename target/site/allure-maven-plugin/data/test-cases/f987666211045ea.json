@@ -1,0 +1,120 @@
+{
+  "uid" : "f987666211045ea",
+  "name" : "Создание заказа",
+  "fullName" : "edu.sprint3.orders.CreateOrderTest.orderCreatingIsAvailableTest",
+  "historyId" : "e7cd86ab928e6377ebb608b0c401bf21",
+  "time" : {
+    "start" : 1648833129699,
+    "stop" : 1648833130247,
+    "duration" : 548
+  },
+  "description" : "Создаем заказ со случайными значениями без выбора цвета",
+  "descriptionHtml" : "<p>Создаем заказ со случайными значениями без выбора цвета</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Создаем заказ со случайными значениями без выбора цвета",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создаем заказ со случайными данными",
+      "time" : {
+        "start" : 1648833129704,
+        "stop" : 1648833129714,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Регистрируем заказ",
+      "time" : {
+        "start" : 1648833129755,
+        "stop" : 1648833129936,
+        "duration" : 181
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "order",
+        "value" : "Order(firstName=null, lastName=null, address=null, metroStation=null, phone=null, rentTime=0, deliveryDate=null, comment=null, color=null)"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Удаляем заказ 948809",
+      "time" : {
+        "start" : 1648833130002,
+        "stop" : 1648833130247,
+        "duration" : 245
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "orderId",
+        "value" : "948809"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 3
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "edu.sprint3.orders"
+  }, {
+    "name" : "testClass",
+    "value" : "edu.sprint3.orders.CreateOrderTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "orderCreatingIsAvailableTest"
+  }, {
+    "name" : "suite",
+    "value" : "edu.sprint3.orders.CreateOrderTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-PNA8O1J9"
+  }, {
+    "name" : "thread",
+    "value" : "26544@LAPTOP-PNA8O1J9.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f987666211045ea.json",
+  "parameterValues" : [ ]
+}
