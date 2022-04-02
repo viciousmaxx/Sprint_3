@@ -1,0 +1,84 @@
+{
+  "uid" : "bcf05ac54fe7a17",
+  "name" : "createOrderTest[0: color = [BLACK, GREY]]",
+  "fullName" : "edu.sprint3.orders.LoginParametrizedTest.createOrderTest[0: color = [BLACK, GREY]]",
+  "historyId" : "8c6c548b35be251806acda842a7651b8",
+  "time" : {
+    "start" : 1648833131668,
+    "stop" : 1648833131844,
+    "duration" : 176
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Регистрируем заказ",
+      "time" : {
+        "start" : 1648833131669,
+        "stop" : 1648833131837,
+        "duration" : 168
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "order",
+        "value" : "Order(firstName=Иван, lastName=Иванов, address=ул. Ленина, 1, metroStation=6, phone=+79998887766, rentTime=2, deliveryDate=2022-04-01T20:12:11.669194, comment=произвольный коммент, color=[BLACK, GREY])"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "edu.sprint3.orders"
+  }, {
+    "name" : "testClass",
+    "value" : "edu.sprint3.orders.LoginParametrizedTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createOrderTest[0: color = [BLACK, GREY]]"
+  }, {
+    "name" : "suite",
+    "value" : "edu.sprint3.orders.LoginParametrizedTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-PNA8O1J9"
+  }, {
+    "name" : "thread",
+    "value" : "26544@LAPTOP-PNA8O1J9.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bcf05ac54fe7a17.json",
+  "parameterValues" : [ ]
+}

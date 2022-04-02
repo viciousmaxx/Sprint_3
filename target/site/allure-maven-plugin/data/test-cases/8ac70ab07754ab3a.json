@@ -1,0 +1,156 @@
+{
+  "uid" : "8ac70ab07754ab3a",
+  "name" : "Успешный запрос возвращает ok: true",
+  "fullName" : "edu.sprint3.couriers.CreateCourierTest.successRequestReturnOkTrueTest",
+  "historyId" : "b6c01ca3588afd6cc219703970285135",
+  "time" : {
+    "start" : 1648833064899,
+    "stop" : 1648833065434,
+    "duration" : 535
+  },
+  "description" : "При создании курьера возвращается ответ 'ok: true'",
+  "descriptionHtml" : "<p>При создании курьера возвращается ответ 'ok: true'</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "При создании курьера возвращается ответ 'ok: true'",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создаем курьера со случайными данными",
+      "time" : {
+        "start" : 1648833064899,
+        "stop" : 1648833064900,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6174414afb696531",
+        "name" : "Login: ",
+        "source" : "6174414afb696531.txt",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "d85cc0cd607dc40e",
+        "name" : "Password: ",
+        "source" : "d85cc0cd607dc40e.txt",
+        "type" : "text/plain",
+        "size" : 10
+      }, {
+        "uid" : "3cdfebc06b38e1a6",
+        "name" : "FirstName: ",
+        "source" : "3cdfebc06b38e1a6.txt",
+        "type" : "text/plain",
+        "size" : 10
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Регистрация курьера",
+      "time" : {
+        "start" : 1648833064900,
+        "stop" : 1648833065107,
+        "duration" : 207
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "courier",
+        "value" : "Courier(login=dPfNOaODih, password=xLUrKTjPXY, firstName=dgdjDVSCtq)"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Авторизуем курьера dPfNOaODih",
+      "time" : {
+        "start" : 1648833065107,
+        "stop" : 1648833065239,
+        "duration" : 132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "credentials",
+        "value" : "CourierCredentials(login=dPfNOaODih, password=xLUrKTjPXY, firstName=null)"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Удаляем курьера с ID 46038",
+      "time" : {
+        "start" : 1648833065256,
+        "stop" : 1648833065434,
+        "duration" : 178
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "id",
+        "value" : "46038"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "edu.sprint3.couriers"
+  }, {
+    "name" : "testClass",
+    "value" : "edu.sprint3.couriers.CreateCourierTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "successRequestReturnOkTrueTest"
+  }, {
+    "name" : "suite",
+    "value" : "edu.sprint3.couriers.CreateCourierTest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-PNA8O1J9"
+  }, {
+    "name" : "thread",
+    "value" : "26544@LAPTOP-PNA8O1J9.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8ac70ab07754ab3a.json",
+  "parameterValues" : [ ]
+}
